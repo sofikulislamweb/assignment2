@@ -1,0 +1,259 @@
+/* google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* body style here */
+body,html{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2D25A0;
+}
+
+/* banner start here */
+
+.top-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+    padding: 50px;
+
+}
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.banner-content h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0px;
+}
+
+.banner-content a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.banner-image img{
+    max-Width:100%;
+}
+.banner-image img:hover{
+    background-color: blue;
+}
+/* banner end here */
+/* Players section start here */
+
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-row-gap: 30px;
+    grid-column-gap:30px;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    justify-content: center;
+
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    
+
+}
+.player p{
+    font-size: 16px ;
+    font-weight: 400 !important;
+    line-height: 26px;
+}
+.player img{
+    max-width: 100%;
+
+}
+
+/* Players section end here */
+/* highlight section start here */
+.main-highlight{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.highlight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 85%;
+    margin: auto;
+
+}
+.highlight-content p{
+    padding: 0 60px 20px 0;
+}
+
+.highlight-content h1{
+    padding: 0 60px 0 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.highlight-content a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.highlight-image img{
+    max-width: 100%;
+
+}
+
+/* highlight section end here */
+/* champion section strat here */
+.champion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    max-width: 85%;
+    padding-top: 50px;
+    margin: auto;
+}
+.champion-image img{
+    max-width: 100%;
+}
+/* champion section end here */
+/* runnersup section strat here */
+.runnersup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    max-width: 85%;
+    padding-top: 50px;
+    margin: auto;
+}
+.runnersup-image img{
+    max-width: 100%;
+}
+/* runnersup section end here */
+/* footer start here */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.football{
+    text-align: center;
+    
+}
+.logo img{
+  max-width:50%;
+}
+
+/* footer end here */
+
+
+
+/* media quareies start here*/
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .top-banner{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap:50px;
+        padding: 10px;
+    }
+    .top-banner h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        padding-right: 20px;
+        
+
+    }
+    .banner-image img{
+        max-width: 100%;
+
+    }
+    .players{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .player{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .player img{
+        max-width: 100%;
+
+    }
+    .highlight{
+        grid-template-columns: 1fr;
+    }
+    .highlight-content a{
+        margin-top:20px;
+    }
+    .highlight h1{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .highlight-image img{
+        max-width:100%;
+        padding-top:30px;
+    }
+    .logo img{
+        max-width: 60%;
+       
+    }
+    .champion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:20px;
+    padding: 0;
+    max-width:85%;
+    margin: auto;
+    }
+    .champion-image img{
+    max-width: 100%;
+    }
+    .runnersup{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:20px;
+    padding: 0;
+    max-width:85%;
+    margin: auto;
+    }
+    .runnersup-image img{
+    max-width: 100%;
+    }
+    
+}
+/* media quareies end here*/
